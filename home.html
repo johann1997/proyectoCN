@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+    </head>
+    <body>
+        <!--// Banner //-->
+        <div class="banner">
+            <br>
+        </div>
+        <!--// Logo //-->
+        <div class="logotype">
+            <img src="logo.JPG">
+        </div>
+        <!--// Contenido página //-->
+        <div class="page">
+            <!------------// Menú //------------->
+            <div class="navbar">
+                <a href="#context">Contexto</a>
+                <a href="#dates">Datos</a>
+                <a href="#results">Resultado</a>
+                <a href="#graphics">Gráficos</a>
+            </div>
+            <!--// Contexto //-->
+            <div class="container-ng" id="context">
+                <h2>Contexto</h2>
+                <hr>
+                <div class="container-img">
+                    <img src="contexto.jpg">
+                    <div class="div-context">
+                        HTML is the standard markup language for creating Web pages. 
+                        HTML describes the structure of a Web page, and consists of a series of elements. 
+                        HTML elements tell the browser how to display the content
+                    </div>
+                </div>
+            </div>
+            <!--// Información de atributo //-->
+            <div class="container-ng" id="dates">
+                <h2>Información de atributo</h2>
+                <hr>
+                <div class="container-form">
+                    <p>HTML is the standard markup language for creating Web pages. 
+                    HTML describes the structure of a Web page, and consists of a series of elements. 
+                    HTML elements tell the browser how to display the content</p>
+                    <form class="formClass">
+                        <table >
+                            <tr>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                                <td>Fecha de nacimiento</td>
+                                <td>
+                                    <input type="date" id="fdate" name="fdate">
+                                  </td>
+                                <td></td>
+                              </tr>
+                            <tr>
+                              <td>Sexo</td>
+                              <td>
+                                    <div>
+                                        <input type="radio" id="male" name="male_gener" value="male">
+                                        <label>Masculino</label>
+                                        <input type="radio" id="female" name="female_gener" value="female">
+                                        <label>Femenino</label>
+                                    </div>
+                                </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>ChestPainType</td>
+                              <td>
+                                    <select id="chest" name="chest">
+                                        <option value="ta">TA: angina típica</option>
+                                        <option value="tb">TB: angina típica</option>
+                                        <option value="tc">TC: angina típica</option>
+                                        <option value="td">TD: angina típica</option>
+                                    </select>
+                                </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                                <td>PA en reposo</td>
+                                <td>
+                                    <input type="text" id="pa" name="pa">
+                                  </td>
+                                <td>
+                                    <a>mm Hg</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Colesterol</td>
+                                <td>
+                                    <input type="text" id="colesterol" name="colesterol">
+                                  </td>
+                                <td>
+                                    <a>mm/dl</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BS en ayunas</td>
+                                <td>
+                                    <select id="bs" name="bs">
+                                        <option value="ayunas">1: si BS en ayunas</option>
+                                        <option value="comido">2: si BS comido</option>
+                                    </select>
+                                  </td>
+                                <td>
+                                    <a>mm/dl</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ECG en reposo </td>
+                                <td>
+                                    <select id="ecg" name="ecg">    
+                                        <option value="normal">Normal: normal</option>
+                                        <option value="alto">Alto: alto</option>
+                                    </select>
+                                  </td>
+                                <td>
+                                    <a>mV</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MaxHR</td>
+                                <td>
+                                    <input type="text" id="maxHR" name="maxHR">
+                                </td>
+                                <td>
+                                    <a>Valor numérico entre 60 y 202</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ExerciseAngina</td>
+                                <td>
+                                    <input type="checkbox" id="si" name="si" value="SI">
+                                    <label> SI</label>
+                                    <input type="checkbox" id="no" name="no" value="NO">
+                                    <label> NO</label>
+                                </td>
+                                <td>
+                                    <a>Valor numérico entre 60 y 202</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Oldpeak</td>
+                                <td>
+                                    <input type="text" id="oldpeak" name="oldpeak">
+                                </td>
+                                <td>
+                                    <a>(Valor numérico medido en depresión)</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ST_Slope</td>
+                                <td>
+                                    <select id="slope" name="slope">    
+                                        <option value="pendiente">Arriba: pendiente</option>
+                                        <option value="completo">Arriba: completo</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                          </table>
+                        <br>
+                        <br>
+                        <div class="containter-f">
+                            <button>Realizar diagnóstico</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!--// Resultado //-->
+            <div class="container-ng" id="results">
+                <h2>Resultado</h2>
+                <hr>
+                <p>A continuación se expresa la estimación ...</p>
+                <div class="container-sq">
+                    <textarea name="message" rows="3" cols="30">A pesar del diagnostico ....
+                    </textarea>
+                </div>
+            </div>
+            <!--// Gráficos //-->
+            <div class="container-ng" id="graphics">
+                <h2>Gráficos</h2>
+                <hr>
+                <div class="container-gr">
+                    <img src="graficas.jpg">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

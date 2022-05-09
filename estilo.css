@@ -1,0 +1,108 @@
+body{
+    margin: 0%;
+}
+.page{
+    background-color: white;
+}
+/*////////////// Cabecera ///////////////*/
+.banner{
+    background-color: rgb(22, 3, 53);
+    padding: 2%;
+}
+.logotype{
+    display: flex;
+    justify-content: center;
+}
+/*///////////// Menu ///////////////////*/
+.navbar {
+    overflow: hidden;
+    background-color: rgb(22, 3, 53);
+    width: 100%;
+    padding-left: 10%;
+}  
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+} 
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+/*///////////// ----------> Contenido de página /////////////////*/
+.container-ng{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+h2{
+    margin-left: 5%;
+}
+hr{
+    border: 0.2px solid rgb(117, 117, 117);
+}
+/*////////// Contexto /////////////*/
+.container-img{
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.container-img img{
+    width: 100%;
+    height: 250px;
+}
+.div-context{
+    background-color: rgb(190, 190, 190);
+    padding: 4%;
+    border: 1px solid rgb(158, 158, 158);
+}
+/*////////// Informacion de atributo /////////////*/
+.container-form{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formClass{
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formClass div{
+    display: flex;
+    justify-content: space-around;
+}
+td{
+    height: 40px;
+}
+.containter-f button{
+    padding: 3%;
+    background-color: rgb(22, 3, 53);
+    color: white;
+    border-radius: 8px;
+    border-style: none;
+}
+/*////////// Resultado /////////////*/
+.container-sq{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+textarea{
+    width: 100%;
+}
+/*////////// Graficos /////////////*/
+.container-gr img{
+    width: 100%;
+}
