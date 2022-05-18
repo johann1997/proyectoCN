@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMART BEAT</title>
+  <LINK REL=StyleSheet HREF="../static/css/bootstrap.css" TYPE="text/css">
+</head>
+
+<body>
+  <!--// Inicio de navegacion //-->
+  <div class="row">
+    <div class="col-12"><br><br></div>
+  </div>
+  <a class="navbar-brand" href="#"><img src="../static/img/logo.JPG" width="20%" class="mx-auto d-block"></a>
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark "
+    style="background-color: #160335;">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" style="padding-left: 43%;">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#context" style="font-size: 20px;">Contexto
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#datos" style="font-size: 20px;">Datos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#informacion" style="font-size: 20px;">Atributos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+  <!--// Fin de navegacion //-->
+
+
+  <!--// Contexto //-->
+  <div class="card text-center" style="width: 90%; height: 20%; margin:auto;">
+    <div class="card-header" style="background-color: #160335;">
+      <h2 style="color: aliceblue;" id="context">Contexto</h2>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"><img src="../static/img/contexto.jpg" width="20%" height="40%"></h5>
+      <p class="card-text" style="text-align: justify; font-style:Times New Roman;">Las enfermedades cardiovasculares
+        (ECV) son la causa número 1 de muerte en todo el mundo,
+        con una estimación de 17,9 millones de vidas cada año, lo que representa el 31% de todas las muertes en todo el
+        mundo.
+        Cuatro de cada 5CVD muertes se deben a ataques cardíacos y accidentes cerebrovasculares, y un tercio de estas
+        muertes ocurren prematuramente en personas menores de 70 años.
+        La insuficiencia cardíaca es un evento común causado por los ECV y este conjunto de datos contiene 11
+        características que se pueden utilizar para predecir una posible enfermedad cardíaca.
+        Las personas con enfermedad cardiovascular o que tienen un alto riesgo cardiovascular (debido a la presencia de
+        uno o más factores de riesgo como hipertensión, diabetes,
+        hiperlipidemia o enfermedad ya establecida) necesitan una detección y un tratamiento tempranos en los que un
+        modelo de aprendizaje automático puede ser de gran ayuda.</p>
+    </div>
+  </div><br>
+  <!--// Fin de Contexto //-->
+
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+
+      <!--// Informacion de atributo //-->
+      <div class="card text-center" style="width: 70%; margin-left: 75px; ">
+        <div class="card-header" style="background-color: #160335;">
+          <h2 style="color: aliceblue;" id="informacion">Informacion de atributo</h2>
+        </div>
+        <div class="card-body">
+          <p>1. Edad: edad del paciente.</p>
+          <p>2. Sexo: Sexo del paciente .</p>
+          <p>3. ChestPainType: Tipo de dolor torácico .</p>
+          <p>4. PA en reposo: presión arterial en reposo .</p>
+          <p>5. Colesterol: colesterol sérico.</p>
+          <p>6. BS en ayunas: azúcar en sangre en ayunas .</p>
+          <p>7. ECG en reposo: resultados del electrocardiograma en reposo .</p>
+          <p>8. MaxHR: frecuencia cardíaca máxima alcanzada .</p>
+          <p>9. ExerciseAngina: angina inducida por el ejercicio .</p>
+          <p>10. Oldpeak: oldpeak = ST .</p>
+          <p>11. ST_Slope: la pendiente del segmento ST del ejercicio máximo .</p>
+          <p>12. Enfermedad cardíaca: clase de salida .</p>
+
+        </div>
+      </div>
+    </div>
+    <!--// Fin de informacion de atributo //-->
+
+    <div class="col-md-8 col-sm-6">
+      <!--// Cuestionario //-->
+      <div class="card " id="datos" style="width: 50%;">
+        <div class="card-header text-center" style="background-color: #160335;">
+          <h2 style="color: aliceblue;">Cuestionario</h2>
+        </div>
+        <div class="card-body">
+          <form action="/register" method="post">
+            <div class="form-group row">
+              <div class="form-group col-md-4">
+                <label class="col-md-6 col-form-label">Edad:</label><br>
+                <input class="form-control" style="width: 50%;" type="number" name="edad" id="edad" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label class="col-md-6 col-form-label">MaxHR:</label>
+                <input class="form-control" style="width: 50%;" type="number" name="maxhr" id="maxhr" required>
+                <small class="form-text text-muted">Valor numérico entre 60 y 202</small>
+              </div>
+              <div class="form-group col-md-4">
+                <label class="col-md-6 col-form-label">Sexo:</label><br>
+                <input class="form-check-input" type="radio" name="sexo" id="masculino" value="M">
+                <label for="">M</label>
+                <input class="form-check-input" type="radio" name="sexo" id="femenino" value="F">
+                <label for="">F</label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-group col-md-5">
+                <label class="col-md-6 col-form-label">Colesterol:</label>
+                <input class="form-control" type="number" name="colesterol" id="colesterol" required>
+                <small class="form-text text-muted">mm/dl</small>
+              </div>
+              <div class="form-group col-md-6" style="margin-left: 40px;">
+                <label class="col-md-6 col-form-label">PA en reposo:</label>
+                <input class="form-control" type="number" name="pa" id="pa" required>
+                <small class="form-text text-muted">mm Hg</small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-group col-md-5">
+                <label class="col-md-7 col-form-label">ChestPainType:</label>
+                <select class="form-control" id="chest" name="chest">
+                  <option value="TA">TA: angina típica</option>
+                  <option value="ATA">ATA: angina atípica</option>
+                  <option value="NAP">NAP: dolor no anginoso</option>
+                  <option value="ASY">ASY: asintomático</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6" style="margin-left: 40px;">
+                <label class="col-md-8 col-form-label">Glucemia en ayunas:</label>
+                <select class="form-control" id="bs" name="bs">
+                  <option value="0">0: si en ayunas</option>
+                  <option value="1">1: si BS comido</option>
+                </select>
+                <small class="form-text text-muted"> [0: si BS en ayunas > 120 mg/dl, 1: en caso contrario]</small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-group col-md-5">
+                <label class="col-md-8 col-form-label">ECG en reposo:</label>
+                <select class="form-control" id="ecg" name="ecg">
+                  <option value="Normal">Normal: normal</option>
+                  <option value="ST">ST: con anomalias</option>
+                  <option value="HVI">HVI: Hipertrofia ventricular</option>
+                </select>
+                <small class="form-text text-muted"> [Normal: normal, ST: con anomalías HVI: hipertrofia ventricular
+                  ]</small>
+              </div>
+              <div class="form-group col-md-6" style="margin-left: 40px;">
+                <label class="col-md-6 col-form-label">ST_Slope:</label>
+                <select class="form-control" id="slope" name="slope">
+                  <option value="Up">Arriba: ascendente</option>
+                  <option value="Flat">Plana: plana</option>
+                  <option value="Down">Abajo: descendente</option>
+                </select>
+                <small class="form-text text-muted">[Arriba: pendiente ascendente, Plana: plana, Abajo: pendiente
+                  descendente]</small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="form-group col-md-5">
+                <label class="col-md-8 col-form-label">ExerciseAngina:</label>
+                <input class="form-control" type="number" name="ExerciseAngina" id="ExerciseAngina">
+                <small class="form-text text-muted">Valor numérico medido en depresión</small>
+              </div>
+              <div class="form-group col-md-6" style="margin-left: 40px;">
+                <label class="col-md-6 col-form-label">Oldpeak:</label>
+                <input class="form-control" type="number" name="oldpeak" id="oldpeak">
+                <small class="form-text text-muted">Valor numérico medido en depresión</small>
+              </div>
+            </div><br>
+            <div style="margin-left: 30%; margin-right: 0%;">
+              <button type="submit" class="btn btn-success" style="width: 50%;  ">Realizar Diagnostico</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div><br><br>
+  <!--// Fin de cuestionario //-->
+
+  <footer class="bg-light text-center text-lg-start">
+    <div></div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <img src="../static/img/Logo_UAO.png" alt="" width="5%">
+      © 2022 Copyright: Computacion en la nube - Camilo Espinosa - Johann Montoya - Julian Vega - Geyner Rivera
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+
+</html>
